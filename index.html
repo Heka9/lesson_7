@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			background
+		</header>
+		<main>
+			<div class="content">
+				<div class="background-color">
+					<div class="background-color-block">
+						<div class="backgtound-color-title">
+							background-color
+						</div>
+						<div class="background-color-text">
+							<p>Background-color - определяет цвет фона элемента.</p>
+							<p>
+								Синтаксис: background-color: цвет;
+							</p>
+							<p>Универсальная запись: background: цвет;
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="background-image">
+					<div class="background-image-block">
+						<div class="backgtound-image-title">
+							background-image
+						</div>
+						<div class="background-image-text">
+							<p>Background-image - устанавливает фоновое изображение для элемента либо задает градиентную
+								заливку</p>
+							<p>
+								Синтаксис: background-image: url("путь к файлу");
+							</p>
+							<p>
+								Универсальная запись: background: цвет url("путь к файлу");
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="background-repeat">
+					<div class="background-repeat-block">
+						<div class="backgtound-repeat-title">
+							background-repeat
+						</div>
+						<div class="background-repeat-text">
+							<p>Background-repeat - определяет, как будет повторяться фоновое изображение. Может иметь следующие
+								значения:</p>
+							<ol class="background-repeat-list">
+								<li>repeat — фоновое изображение повторяется по горизонтали и вертикали;</li>
+								<li>no-repeat — устанавливает одно фоновое изображение в элементе без его повторений;</li>
+								<li>repeat-x — фоновый рисунок повторяется только по горизонтали;</li>
+								<li>repeat-y — фоновый рисунок повторяется только по вертикали;</li>
+								<li>space — изображение повторяется столько раз, чтобы полностью заполнить область; если это не
+									удаётся, между картинками добавляется пустое пространство;</li>
+								<li>round — изображение повторяется так, чтобы в области поместилось целое число рисунков; если
+									это не удаётся сделать, то фоновые рисунки масштабируются.</li>
+							</ol>
+
+
+							<p>
+								Синтаксис: background-repeat: repeat;
+							</p>
+							<p>
+								Универсальная запись: background: цвет url("путь к файлу") значение повторения;
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="background-position">
+					<div class="background-position-block">
+						<div class="backgtound-position-title">
+							background-position
+						</div>
+						<div class="background-position-text">
+							<p>Background-repeat - задает начальное положение фонового изображения, где первое значение
+								(проценты, px, слово) определяет расположение по горизонтали, второе - по вертикали. Может иметь
+								следующие значения:</p>
+							<ol class="background-position-list">
+								<li>0 0 или top left или 0% 0% — значение по умолчанию;</li>
+								<li> center center или 50% 50% — изображение разместится по центру, если значения повторяются,
+									то можно использовать одну запись(center или 50%);</li>
+								<li>0 50% или left — изображение разместится слева по центру;</li>
+								<li>100% 100% или bottom right — изображение разместится справа в нижнем углу;</li>
+								<li>20px 20px — изображение разместится на 20 пикселей правее и ниже левого верхнего угла или на
+									любую другую заданую величину в пикселях;
+								</li>
+							</ol>
+
+
+							<p>
+								Синтаксис: background-position: 0 0 или top left или 0% 0%;
+							</p>
+							<p>
+								Универсальная запись: background: цвет url("путь к файлу") 0 0 значение повторения;
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="background-size">
+					<div class="background-size-block">
+						<div class="backgtound-size-title">
+							background-size
+						</div>
+						<div class="background-size-text">
+							<p>Background-size - масштабирует фоновое изображение согласно заданным размерам. В цифрах, где
+								первое значение (проценты, px) определяет ширину, второе - высоту. Либо специальным значением.
+								Может иметь следующие значения:</p>
+							<ol class="background-size-list">
+								<li>auto auto — значение по умолчанию;</li>
+								<li>100% auto — размеры картинки по ширине блока;</li>
+								<li>auto 100% — размеры картинки по высоте блока;</li>
+								<li>100% 100% — растягиваем картинку на всю ширину и высоту блока;</li>
+								<li>contain — масштабирует изображение с сохранением пропорций таким образом, чтобы картинка
+									целиком поместилась внутрь блока. То есть по меньшей стороне картинки;
+								</li>
+								<li>cover — масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота
+									равнялась ширине или высоте блока. То есть по большей стороне картинки;
+								</li>
+								<li>200px 150px — устанавливаем конкретные размеры. Если установлено одно значение, оно задает
+									ширину фона, второе значение принимается за auto. Пропорции картинки при этом сохраняются.
+									Использование двух значений через пробел задает ширину и высоту фоновой картинки;
+								</li>
+							</ol>
+
+							<p>
+								Синтаксис: background-size: 200px auto;
+							</p>
+							<p>
+								Универсальная запись: background: цвет url("путь к файлу") позиция / cover значение повторения;
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="background-attachment">
+					<div class="background-attachment-block">
+						<div class="backgtound-attachment-title">
+							background-attachment
+						</div>
+						<div class="background-attachment-text">
+							<p>Background-attachment - устанавливает, будет ли прокручиваться фоновое изображение вместе с
+								содержимым элемента. Может иметь следующие значения:</p>
+							<ol class="background-attachment-list">
+								<li>scroll — позволяет перемещаться фону вместе с окном браузера, значение по умолчанию;</li>
+								<li>fixed — делает фоновое изображение элемента неподвижным, а так же устанавливает фоновое
+									изображение относительно окна браузера;</li>
+								<li>local — фон фиксируется с учётом поведения элемента. Если элемент имеет прокрутку, то фон
+									будет прокручиваться вместе с содержимым, но фон выходящий за рамки элемента остаётся на
+									месте.;</li>
+							</ol>
+
+							<p>
+								Универсальная запись: background: цвет url("путь к файлу") позиция / размер значение повторения
+								fixed;
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="severalbackgrounds">
+					<div class="severalbackgrounds-block">
+						<div class="severalbackgrounds-title">
+							Установка нескольких фоновых изображений для блока
+						</div>
+						<div class="severalbackgrounds-text">
+							<p>Свойство background позволяет задать несколько фоновых изображений одному блоку, причем со
+								своими настройками позиционирования масштабирования и прокрутки. Указывать значения следует
+								через запятую.
+							</p>
+							<p>
+								Универсальная запись: background: цвет url("путь к файлу") позиция / размер значение повторения
+								значение attachment, следующий слой фонового изображения со своимим настройками. Слой, который
+								расположен левее по коду будет накладывать на тот, что правее по коду;
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-title">
+				Домашнее задание
+			</div>
+			<ul class="list">
+				<li>пункт 1</li>
+				<li>пункт 2</li>
+				<li>пункт 3</li>
+				<li>пункт 4</li>
+				<li>пункт 5</li>
+			</ul>
+			<div class="contact">
+				<h2 class="contact-title">
+					CONTACT
+				</h2>
+				<ul class="contact-list">
+					<li class="item1">321 Pikes Place Parkway
+						Seattle, WA 54321</li>
+					<li class="item2">(555) 765-4321</li>
+					<li class="item3">Info@company.com</li>
+					<li class="item4">Mon - Sat: 7:000 am - 6:00 pm</li>
+				</ul>
+			</div>
+			<div class="block">
+				<h2 class="block-title">
+					Top notch service is our main auto motive
+				</h2>
+				<a class="blockbutton" href="">Make an Appointment</a>
+			</div>
+			<div class="block2">
+				<div class="block2title">
+					<div class="topparttitle">
+						OUR IMPACT
+					</div>
+					<div class="bottomparttitle">
+						Nemo enim ipsam voluptatem quia voluptas
+					</div>
+				</div>
+				<div class="image">
+					<img src="img/image.png" alt="Машина">
+				</div>
+				<div class="block2content">
+					<div class="block2item">
+						<div class="block2achievement">
+							<div class="block2image">
+								<img src="img/car_oil-24x.png" alt="">
+							</div>
+							<div class="block2achievementcontent">
+								<h3 class="block2achievementtitle">
+									16k+
+								</h3>
+								<p class="block2text">
+									Oil changes
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="block2item">
+						<div class="block2achievement">
+							<div class="block2image">
+								<img src="img/car_transmission_24x.png" alt="">
+							</div>
+							<div class="block2achievementcontent">
+								<h3 class="block2achievementtitle">
+									13k+
+								</h3>
+								<p class="block2text">
+									Transmission repairs
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="block2item">
+						<div class="block2achievement">
+							<div class="block2image">
+								<img src="img/car_alignment_24x.png" alt="">
+							</div>
+							<div class="block2achievementcontent">
+								<h3 class="block2achievementtitle">
+									15k+
+								</h3>
+								<p class="block2text">
+									Alignments made
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="block2item">
+						<div class="block2achievement">
+							<div class="block2image">
+								<img src="img/car_engine_2_24x.png" alt="">
+							</div>
+							<div class="block2achievementcontent">
+								<h3 class="block2achievementtitle">
+									11,500+
+								</h3>
+								<p class="block2text">
+									Engines repaired
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
